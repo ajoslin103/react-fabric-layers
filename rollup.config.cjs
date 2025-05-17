@@ -1,27 +1,27 @@
-import babel from '@rollup/plugin-babel';
-import resolve from '@rollup/plugin-node-resolve';
-import commonjs from '@rollup/plugin-commonjs';
-import pkg from './package.json';
+const babel = require('@rollup/plugin-babel');
+const resolve = require('@rollup/plugin-node-resolve');
+const commonjs = require('@rollup/plugin-commonjs');
+const pkg = require('./package.json');
 
 const extensions = ['.js', '.jsx', '.ts', '.tsx'];
 
-export default {
+module.exports = {
   input: 'src/index.ts',
   output: [
     {
       file: pkg.main,
       format: 'cjs',
-      sourcemap: true,
+      sourcemap: true
     },
     {
       file: pkg.module,
       format: 'esm',
-      sourcemap: true,
-    },
+      sourcemap: true
+    }
   ],
   external: [
     ...Object.keys(pkg.peerDependencies || {}),
-    ...Object.keys(pkg.dependencies || {}),
+    ...Object.keys(pkg.dependencies || {})
   ],
   plugins: [
     resolve({ extensions }),
@@ -30,7 +30,7 @@ export default {
       extensions,
       babelHelpers: 'bundled',
       include: ['src/**/*'],
-      exclude: 'node_modules/**',
-    }),
-  ],
+      exclude: 'node_modules/**'
+    })
+  ]
 };

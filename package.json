@@ -42,5 +42,18 @@
   "files": [
     "dist"
   ],
-  "sideEffects": false
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/react-fabric-layers.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/react-fabric-layers/issues"
+  },
+  "homepage": "https://github.com/yourusername/react-fabric-layers#readme",
+  "author": "Your Name",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
 }
