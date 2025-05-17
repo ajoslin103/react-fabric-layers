@@ -45,13 +45,13 @@
   "sideEffects": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/react-fabric-layers.git"
+    "url": "https://github.com/ajoslin103/react-fabric-layers.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/react-fabric-layers/issues"
+    "url": "https://github.com/ajoslin103/react-fabric-layers/issues"
   },
-  "homepage": "https://github.com/yourusername/react-fabric-layers#readme",
-  "author": "Your Name",
+  "homepage": "https://github.com/ajoslin103/react-fabric-layers#readme",
+  "author": "Allen Joslin",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
